@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+:root {
+  --brand-color: #3829E0;
+  --hover-color: #7E75EB;
+  --dark-text-color: #1F2F56;
+  --light-text-color: #7280A7;
+  --plan-bg-color: #F5F7FF;
+  
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,17 +20,23 @@ body {
   align-items: center;
   height: 100vh;
   background: url("pattern-background-desktop.svg");
-  
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-color: #E0E8FF;
 }
 
 #entire-card {
-  border: 1px solid red;
   height: 65vh;
   width: 22vw;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 img {
   width: 22vw;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
+
