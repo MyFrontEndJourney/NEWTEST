@@ -10,7 +10,7 @@
   --dark-text-color: #1F2F56;
   --light-text-color: #7280A7;
   --plan-bg-color: #F5F7FF;
-  
+  --body-bg-color: #E0E8FF;
 }
 
 body {
@@ -22,16 +22,16 @@ body {
   background: url("pattern-background-desktop.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #E0E8FF;
+  background-color: var(--body-bg-color);
+  font-family: "Red Hat Display";
 }
 
 #entire-card {
   height: 65vh;
   width: 22vw;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
   background-color: white;
+  
 }
 
 img {
@@ -40,3 +40,99 @@ img {
   border-top-right-radius: 15px;
 }
 
+#text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--dark-text-color);
+  margin: 1rem;
+}
+
+#description {
+  color: var(--light-text-color);
+  margin: 1rem 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#details-box {
+  border-radius: 15px;
+  background-color: var(--plan-bg-color);
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+i,
+#change,
+#plan-text,
+#price {
+  margin: 0.3rem 1.5rem;
+}
+
+#flexception {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#change {
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: var(--brand-color);
+  transition: color 130ms linear;
+}
+
+#change:hover {
+  color: var(--hover-color);
+}
+
+i {
+  color: var(--light-text-color);
+}
+
+#plan-text {
+  font-weight: 900;
+  color: var(--dark-text-color);
+}
+
+#price {
+  color: var(--light-text-color);
+}
+
+#proceed {
+  color: white;
+  background-color: var(--brand-color);
+  font-size: 0.9rem;
+  border-radius: 15px;
+  padding: 1rem 6.5rem;
+  margin-top: 1.5rem;
+  font-weight: 900;
+  transition: background-color 130ms linear;
+}
+
+#proceed:hover {
+  background-color: var(--hover-color);
+}
+
+#cancel {
+  margin-top: 2rem;
+  color: var(--light-text-color);
+  font-weight: 900;
+  font-size: 0.9rem;
+  transition: color 130ms linear;
+}
+
+#cancel:hover {
+  color: var(--dark-text-color);
+}
