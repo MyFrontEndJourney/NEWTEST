@@ -10,9 +10,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  border: 1px solid blue;
+  background: url("pattern-background-desktop.svg");
+  width: 100vw;
 }
 
 #entire-card {
   border: 1px solid red;
+  height: 65vh;
+  width: 22vw;
+  border-radius: 15px;
+}
+
+img {
+  width: 22vw;
 }
