@@ -11,7 +11,8 @@ body {
   align-items: center;
   height: 100vh;
   background: url("pattern-background-desktop.svg");
-  width: 100vw;
+  
+  background-repeat: no-repeat;
 }
 
 #entire-card {
